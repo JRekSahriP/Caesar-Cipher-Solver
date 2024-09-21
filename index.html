@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Caesar Cipher Solver</title>
+</head>
+<body>
+    <header>
+        <h1>Caesar Cipher</h1>
+        <p>Encrypt and decrypt messages using the Caesar Cipher technique</p>
+        <p>
+            Learn more about the
+            <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Caesar Cipher</a>
+        </p>
+    </header>
+
+    <main>
+        <div class="input-container">
+            <textarea id = "normalText" placeholder = "Normal Text"></textarea>
+            <div class = "controllers-container">
+                <button id = "encryptBtn" type = "button" class = "fa-solid fa-arrow-down"></button>
+                <input id = "shiftValue" type = "number"/>
+                <button id = "decryptBtn" type = "button" class = "fa-solid fa-arrow-up"></button>   
+            </div>
+            <textarea id = "encryptedText" placeholder = "Encrypted Text"></textarea>
+        </div>
+        <div id = "table-container">
+            <table id = "shiftedTable"></table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by 
+            <a href="https://github.com/JRekSahriP" target="_blank">Rek'Sahri</a>
+        </p>
+    </footer>
+</body>
+<script src = "./dist/script.js"></script>
+</html>
